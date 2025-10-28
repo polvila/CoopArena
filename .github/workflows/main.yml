@@ -1,0 +1,12 @@
+name: Test GHCR Access
+
+on: [workflow_dispatch]
+
+jobs:
+  test-ghcr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test pull of Unreal image
+        run: |
+          echo ${{ secrets.GHCR_TOKEN }} | docker login ghcr.io -u ${{ secrets.GHCR_USERNAME }} --password-stdin
+          docker pull ghcr.io/epicgames/unreal-engine:dev-5.6.1
