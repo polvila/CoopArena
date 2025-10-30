@@ -1,9 +1,15 @@
----
 BasedOnStyle: LLVM
-UseTab: Never
-BreakBeforeBraces: Allman
-ColumnLimit: 120
 IndentWidth: 4
-SortIncludes: "false"
-AccessModifierOffset: -4
-NamespaceIndentation: All
+TabWidth: 4
+UseTab: Always
+BreakBeforeBraces: Attach
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortBlocksOnASingleLine: Never
+AllowShortIfStatementsOnASingleLine: false
+SpaceBeforeParens: ControlStatements
+ColumnLimit: 120
+PointerAlignment: Right
+DerivePointerAlignment: false
+SortIncludes: false
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
