@@ -1,0 +1,3 @@
+[submodule "Plugins/CoopArenaExternalAssets"]
+	path = Plugins/CoopArenaExternalAssets
+	url = https://github.com/polvila/CoopArenaExternalAssets.git
