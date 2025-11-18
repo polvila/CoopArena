@@ -13,7 +13,7 @@ class UArenaInputConfig;
  *
  *	Non-mutable data asset that contains properties used to define a pawn.
  */
-UCLASS()
+UCLASS(BlueprintType, Const, Meta = (DisplayName = "Arena Pawn Data", ShortTooltip = "Data asset used to define a Pawn."))
 class COOPARENA_API UArenaPawnData : public UPrimaryDataAsset
 {
 	GENERATED_BODY()

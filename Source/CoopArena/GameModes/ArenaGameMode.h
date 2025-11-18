@@ -9,7 +9,7 @@
 /**
  * 
  */
-UCLASS()
+UCLASS(Config = Game, Meta = (ShortTooltip = "The base game mode class used by this project."))
 class COOPARENA_API AArenaGameMode : public AGameModeBase
 {
 	GENERATED_BODY()

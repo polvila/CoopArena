@@ -14,7 +14,7 @@ class UArenaPawnData;
  * Component that adds functionality to all Pawn classes so it can be used for characters/vehicles/etc.
  * This coordinates the initialization of other components.
  */
-UCLASS(ClassGroup=(Custom), meta=(BlueprintSpawnableComponent))
+UCLASS()
 class COOPARENA_API UArenaPawnExtensionComponent : public UPawnComponent, public IGameFrameworkInitStateInterface
 {
 	GENERATED_BODY()

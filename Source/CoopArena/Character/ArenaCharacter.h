@@ -8,7 +8,7 @@
 
 class UArenaPawnExtensionComponent;
 
-UCLASS()
+UCLASS(Config = Game, Meta = (ShortTooltip = "The base character pawn class used by this project."))
 class COOPARENA_API AArenaCharacter : public ACharacter
 {
 	GENERATED_BODY()

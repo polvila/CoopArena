@@ -9,7 +9,7 @@
 /**
  * 
  */
-UCLASS()
+UCLASS(Config = Game)
 class COOPARENA_API AArenaHUD : public AHUD
 {
 	GENERATED_BODY()

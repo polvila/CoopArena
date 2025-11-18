@@ -9,7 +9,7 @@
 /**
  * 
  */
-UCLASS()
+UCLASS(Config = Game)
 class COOPARENA_API AArenaPlayerState : public APlayerState
 {
 	GENERATED_BODY()
