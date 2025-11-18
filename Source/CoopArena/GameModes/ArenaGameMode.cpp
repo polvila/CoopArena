@@ -9,6 +9,7 @@
 #include "Player/ArenaPlayerState.h"
 #include "UI/ArenaHUD.h"
 
+#include UE_INLINE_GENERATED_CPP_BY_NAME(ArenaGameMode)
 
 AArenaGameMode::AArenaGameMode()
 {
