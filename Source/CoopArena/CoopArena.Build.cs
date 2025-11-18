@@ -23,7 +23,9 @@ public class CoopArena : ModuleRules
 				"CoreUObject", 
 				"Engine", 
 				"InputCore", 
-				"EnhancedInput"
+				"EnhancedInput",
+				"GameplayTags",
+				"ModularGameplay"
 			}
 		);
 
