@@ -84,5 +84,7 @@ void AArenaCharacter::Tick(float DeltaTime)
 void AArenaCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
+	
+	PawnExtComponent->SetupPlayerInputComponent();
 }
 

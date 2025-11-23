@@ -22,6 +22,10 @@ public:
 	UArenaPawnData(const FObjectInitializer& ObjectInitializer);
 
 public:
+	// Class to instantiate for this pawn (should usually derive from AArenaCharacter).
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Arena|Pawn")
+	TSubclassOf<APawn> PawnClass;
+	
 	// Input configuration used by player controlled pawns to create input mappings and bind input actions.
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Arena|Input")
 	TObjectPtr<UArenaInputConfig> InputConfig;

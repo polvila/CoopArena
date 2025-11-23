@@ -32,6 +32,7 @@ public class CoopArena : ModuleRules
 		PrivateDependencyModuleNames.AddRange(
 			new string[]
 			{
+				"NetCore",
 			}
 		);
 
