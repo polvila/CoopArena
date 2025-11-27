@@ -1,3 +1,12 @@
 [submodule "Plugins/CoopArenaExternalAssets"]
 	path = Plugins/CoopArenaExternalAssets
 	url = https://github.com/polvila/CoopArenaExternalAssets.git
+[submodule "Plugins/ModularGameplayActors"]
+	path = Plugins/ModularGameplayActors
+	url = https://github.com/chronicler-software/ModularGameplayActors.git
+[submodule "Plugins/ModularGameplayData"]
+	path = Plugins/ModularGameplayData
+	url = https://github.com/chronicler-software/ModularGameplayData.git
+[submodule "Plugins/ModularGameplayExperiences"]
+	path = Plugins/ModularGameplayExperiences
+	url = https://github.com/chronicler-software/ModularGameplayExperiences.git
