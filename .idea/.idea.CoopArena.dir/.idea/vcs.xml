@@ -3,5 +3,8 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Plugins/CoopArenaExternalAssets" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Plugins/ModularGameplayActors" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Plugins/ModularGameplayData" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Plugins/ModularGameplayExperiences" vcs="Git" />
   </component>
 </project>

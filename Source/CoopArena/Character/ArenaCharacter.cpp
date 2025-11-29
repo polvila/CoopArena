@@ -3,7 +3,6 @@
 
 #include "ArenaCharacter.h"
 
-#include "ArenaPawnExtensionComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 
@@ -11,9 +10,6 @@
 
 AArenaCharacter::AArenaCharacter()
 {
-	PrimaryActorTick.bCanEverTick = false;
-	PrimaryActorTick.bStartWithTickEnabled = false;
-	
 	SetNetCullDistanceSquared(900000000.0f);
 	
 	UCapsuleComponent* CapsuleComp = GetCapsuleComponent();
@@ -39,52 +35,4 @@ AArenaCharacter::AArenaCharacter()
 	MoveComp->GetNavAgentPropertiesRef().bCanCrouch = true;
 	MoveComp->bCanWalkOffLedgesWhenCrouching = true;
 	MoveComp->SetCrouchedHalfHeight(65.0f);
-	
-	PawnExtComponent = CreateDefaultSubobject<UArenaPawnExtensionComponent>(TEXT("PawnExtensionComponent"));
 }
-
-void AArenaCharacter::BeginPlay()
-{
-	Super::BeginPlay();
-}
-
-void AArenaCharacter::PossessedBy(AController* NewController)
-{
-	Super::PossessedBy(NewController);
-	
-	PawnExtComponent->HandleControllerChanged();
-}
-
-void AArenaCharacter::UnPossessed()
-{
-	Super::UnPossessed();
-	
-	PawnExtComponent->HandleControllerChanged();
-}
-
-void AArenaCharacter::OnRep_Controller()
-{
-	Super::OnRep_Controller();
-	
-	PawnExtComponent->HandleControllerChanged();
-}
-
-void AArenaCharacter::OnRep_PlayerState()
-{
-	Super::OnRep_PlayerState();
-	
-	PawnExtComponent->HandlePlayerStateReplicated();
-}
-
-void AArenaCharacter::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-}
-
-void AArenaCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
-{
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
-	
-	PawnExtComponent->SetupPlayerInputComponent();
-}
-

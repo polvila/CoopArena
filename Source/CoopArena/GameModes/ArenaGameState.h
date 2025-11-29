@@ -3,14 +3,14 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/GameStateBase.h"
+#include "GameMode/ModularExperienceGameState.h"
 #include "ArenaGameState.generated.h"
 
 /**
  * 
  */
 UCLASS(Config = Game)
-class COOPARENA_API AArenaGameState : public AGameStateBase
+class COOPARENA_API AArenaGameState : public AModularExperienceGameState
 {
 	GENERATED_BODY()
 

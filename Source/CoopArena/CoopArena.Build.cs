@@ -25,7 +25,8 @@ public class CoopArena : ModuleRules
 				"InputCore", 
 				"EnhancedInput",
 				"GameplayTags",
-				"ModularGameplay"
+				"ModularGameplay",
+				"ModularGameplayActors",
 			}
 		);
 
@@ -33,6 +34,9 @@ public class CoopArena : ModuleRules
 			new string[]
 			{
 				"NetCore",
+				"ModularGameplayData", 
+				"ModularGameplayExperiences",
+				"CommonGame",
 			}
 		);
 

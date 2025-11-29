@@ -3,18 +3,12 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Engine/GameInstance.h"
+#include "ModularGameInstance.h"
 #include "ArenaGameInstance.generated.h"
 
-/**
- * 
- */
 UCLASS(Config = Game)
-class COOPARENA_API UArenaGameInstance : public UGameInstance
+class COOPARENA_API UArenaGameInstance : public UModularGameInstance
 {
 	GENERATED_BODY()
 
-protected:
-
-	virtual void Init() override;
 };

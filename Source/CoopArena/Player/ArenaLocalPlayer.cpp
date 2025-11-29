@@ -1,5 +1,4 @@
 ﻿// Copyright Pol Vilà. All Rights Reserved.
 
 
-#include "ArenaGameInstance.h"
-
+#include "ArenaLocalPlayer.h"
